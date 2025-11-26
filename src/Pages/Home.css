@@ -1,0 +1,62 @@
+.home-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+/* Background Image (clear, no blur) */
+.home-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/OS.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+/* Soft dark overlay – helps text become readable */
+.home-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); 
+  z-index: -1;
+}
+
+/* Heading styling */
+.home-page h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 0 0 12px rgba(0,0,0,0.9);
+}
+
+/* Button styling */
+.home-page button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background: #4163d4;;
+  color: white;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.home-page button:hover {
+  background: rgb(72, 72, 247);
+  transform: scale(1.1);
+}

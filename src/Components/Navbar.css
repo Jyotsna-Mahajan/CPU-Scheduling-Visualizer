@@ -1,0 +1,31 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  background: #243447;
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  width: 90%;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  display: inline-block;       /* required for transform */
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  transform: translateY(3px);  /* visible movement */
+  text-decoration: underline;
+}
